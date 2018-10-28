@@ -68,9 +68,9 @@ function gen_html_table(tables; title = "Table", caption = nothing, options = xT
 	writerow(io, options, merge((rowid_nXxN = RowId(id),), row)) ##obscured rowid
 	end
 
-    println(io, "</div>"); ## endscroll
+    println(io, "</tbody></table></div>"); ## endscroll
     end#for
-  println(io, "</html>");  
+  println(io, "</body></html>");  
   return String(take!(io));
   end;
 
