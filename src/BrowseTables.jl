@@ -1,5 +1,5 @@
 
-module xBrowseTables
+module BrowseTables
 
 ##export write_html_table, open_html_table, TableOptions
 ##using ArgCheck: @argcheck
@@ -21,6 +21,8 @@ const DEFAULTCSSDIR = abspath(@__DIR__, "..", "assets")
 
 const CssDir = DEFAULTCSSDIR
 const xDebug = true
+
+const internver = "0.04.02"
 
 struct RowId
   id::Int
